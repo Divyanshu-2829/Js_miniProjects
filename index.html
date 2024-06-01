@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../styles.css">
-    <title>Javascript Background colour Switcher</title>
 </head>
-<body>
-   
-        <a class ="anchor" style="
-        background-color: #fff;
-        padding: 10px 30px;
-        border-radius: 8px;
-        color: #212121;
-        text-decoration: none;
-        border: 2px solid #212121;
-        margin-left: 2% ;
-        margin-top: 2%;
-      " href="/" aria-current="page">Home</a>
-    </nav>
-    <div class="canvas">
-        <h1>Colour Scheme Switcher</h1>
-        <span class="button" id="grey"></span>
-        <span class="button" id="white"></span>
-        <span class="button" id="blue"></span>
-        <span class="button" id="yellow"></span>
+<body style="background-color:#212121; color:#fff;">
+    <nav class="navbar">
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://www.youtube.com/@chaiaurcode">Youtube channel</a>
+      </nav>
+      
+    
+    <div id="wrapper">
+      <h1>Number guessing game</h1>
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p>You have 10 attempts to guess the right number.</p>
+    </br>
+        <form class="form">
+            <label2 for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+        </form>
 
-        <h2>
-            Try Clicking on one of the colors above to change the background colour of this page
-        </h2>
+        <div class="resultParas">
+            <p >Previous Guesses: <span class="guesses"></span></p>
+            <p >Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
     </div>
-    <script src="divyanshu1.js"></script>
+    <script src="divyanshu4.js"></script>
 </body>
 </html>
